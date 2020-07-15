@@ -71,6 +71,7 @@
     <Content Include="CSS\bootstrap.min.css" />
     <Content Include="CSS\cover.css" />
     <Content Include="CSS\prism.css" />
+    <Content Include="IMG\sigma150.png" />
     <Content Include="index.html" />
     <Content Include="SCRIPTS\bootstrap.bundle.min.js" />
     <Content Include="SCRIPTS\bootstrap.min.js" />
