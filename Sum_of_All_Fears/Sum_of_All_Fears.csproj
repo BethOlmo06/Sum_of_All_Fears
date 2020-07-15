@@ -76,6 +76,7 @@
     <Content Include="SCRIPTS\bootstrap.min.js" />
     <Content Include="SCRIPTS\jquery.js" />
     <Content Include="SCRIPTS\prism.js" />
+    <Content Include="SCRIPTS\solve.js" />
     <Content Include="solve.html" />
     <Content Include="Web.config" />
   </ItemGroup>
