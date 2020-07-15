@@ -19,6 +19,11 @@ a:hover {
   border: .05rem solid #fff;
 }
 
+#btnCode {
+    background-color: #3d72b4;
+    color: white;
+}
+
 
 /*
  * Base structure
