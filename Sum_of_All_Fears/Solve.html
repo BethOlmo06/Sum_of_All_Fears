@@ -120,11 +120,14 @@
             let message = "";
 
             for (let i = 0; i < array.length - 1; i++) {
-                if (array[i] > k) continue; //if the number in the array is larger than k, go on to the next
+                //if the number in the array is larger than k, go on to the next
+                if (array[i] > k) continue;
 
-                let solution = k - array[i]; //calculate the difference between k and the next number in the array
+                //calculate the difference between k and the next number in the array
+                let solution = k - array[i];
 
-                if (array.indexOf(solution, i + 1) > -1) {//forward search the array, beginning at the NEXT legitimate index position (index begins at position 0, so all legitimate index positions will be positive numbers.)
+                //forward search the array, beginning at the NEXT legitimate index position (index begins at position 0, so all legitimate index positions will be positive numbers.)
+                if (array.indexOf(solution, i + 1) > -1) {
                     message = `The given set of numbers DOES include a solution for a K value of ${k}.`;
                     break;
                 } else {
