@@ -1,75 +1,141 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Sum Fears | Beth Olmo</title>
 
-    <title>Coder Foundry MiniSite Template</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    <!-- CSS -->
+    
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/cover.css" rel="stylesheet" />
+    <link href="CSS/prism.css" rel="stylesheet" />
+
+    
+    <!-- Custom styles for this template -->
+    <link href="CSS/cover.css" rel="stylesheet" />
 </head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container">
-            <a class="navbar-brand" href="/Index.html">Challenge Name Here</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/Index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Solve.html">Solve</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Code.html">Code</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Git</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog Post/YouTube Explanation</a>
-                    </li>
-                </ul>
+<body class="text-center solve-bg">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h6 class="masthead-brand">Arrays JavaScript Exercise</h6>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link" href="\index.html">Home</a>
+                    <a class="nav-link active" href="#">Solve</a>
+                    <a class="nav-link" href="\code.html">Code</a>
+                    <a class="nav-link" href="https://github.com/BethOlmo06/Sum_of_All_Fears" target="_blank">Git</a>
+                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="https://betholmo-portfolio.netlify.app/" target="_blank">Portfolio</a>
+                </nav>
             </div>
-        </div>
-    </nav>
+        </header>
 
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">The Exercise</h1>
-                <p class="lead">This page will display your JS exercise</p>
-                <ul class="list-unstyled">
-                    <li>The Javascript Exercise</li>
-                    <li>Is placed on this page</li>
-                </ul>
+        <main role="main" class="inner cover">
+            <div class="row">
+                <div class="col">
+                    <h1>Run the program to find a value for K.</h1>
+                </div>
             </div>
-        </div>
+            <div class="row pb-5">
+                <div class="col">
+                    <p class="lead">Enter a whole number in each field below.</p>
+                    <br />
+                </div>
+            </div>
+
+            <div class="row pb-5">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <input type="number" class="form-control" id="numInK" placeholder="Enter a number for K">
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" id="numIn1" placeholder="Enter a number">
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" id="numIn2" placeholder="Enter a number">
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" id="numIn3" placeholder="Enter a number">
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" id="numIn4" placeholder="Enter a number">
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" id="numIn5" placeholder="Enter a number">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-4 offset-4">
+                            <button type="button" class="btn btn-success btn-lg elWide" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col">
+                    <h4 id="resultOut"></h4>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                
+            </div>
+        </footer>
     </div>
+    <script src="SCRIPTS/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="SCRIPTS/bootstrap.min.js"></script>
+    <script src="SCRIPTS/prism.js"></script>
+    
+    <script>
+        $("#submit").on("click", function () {
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+            //Step 1: Get user data
+            let k = parseInt($("#numInK").val());
+            let num1 = parseInt($("#numIn1").val());
+            let num2 = parseInt($("#numIn2").val());
+            let num3 = parseInt($("#numIn3").val());
+            let num4 = parseInt($("#numIn4").val());
+            let num5 = parseInt($("#numIn5").val());
 
+            //Step 2: Create an array and add user data to it
+            let array = new Array();
+            array.push(num1);
+            array.push(num2);
+            array.push(num3);
+            array.push(num4);
+            array.push(num5);
+
+            //Step 3:  Perform algorithm
+            let message = "";
+
+            for (let i = 0; i < array.length - 1; i++) {
+                if (array[i] > k) continue; //if the number in the array is larger than k, go on to the next
+
+                let solution = k - array[i]; //calculate the difference between k and the next number in the array
+
+                if (array.indexOf(solution, i + 1) > -1) {//forward search the array, beginning at the NEXT legitimate index position (index begins at position 0, so all legitimate index positions will be positive numbers.)
+                    message = `The given set of numbers DOES include a solution for a K value of ${k}.`;
+                    break;
+                } else {
+                    message = `The given set of numbers does NOT include a solution for a K value of ${k}.`;
+                }
+            }
+
+            // Step 4: Display result
+            $("#resultOut").text(message);
+        });
+    </script>
+    
 </body>
-
 </html>
