@@ -75,6 +75,11 @@
                             <button type="button" class="btn btn-success btn-lg elWide" id="submit">Submit</button>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-2 offset-5">
+                            <button type="button" class="btn btn-warning btn-lg elWide" id="clear">Clear</button>
+                        </div>
+                    </div>
                 </form>
             </div>
             <hr/>
@@ -135,7 +140,16 @@
                 }
             }
 
-            // Step 4: Display result
+            // Step 4: Display result & clear all on click
+            $("#clear").on("click", function () {
+                $("#numInK").val("");
+                $("#numIn1").val("");
+                $("#numIn2").val("");
+                $("#numIn3").val("");
+                $("#numIn4").val("");
+                $("#numIn5").val("");
+                $("#resultOut").text("");
+            })
             $("#resultOut").text(message);
         });
     </script>

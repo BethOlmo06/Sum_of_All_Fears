@@ -81,10 +81,18 @@
                                 }
                                 }
 
-                                // Step 4: Display result
+                                // Step 4: Display result & clear all on click
+                                $("#clear").on("click", function () {
+                                $("#numInK").val("");
+                                $("#numIn1").val("");
+                                $("#numIn2").val("");
+                                $("#numIn3").val("");
+                                $("#numIn4").val("");
+                                $("#numIn5").val("");
+                                $("#resultOut").text("");
+                                })
                                 $("#resultOut").text(message);
-                                });
-                            </code>
+                                });</code>
                         </pre>
                      </div>
                 </div>
