@@ -32,9 +32,9 @@ a:hover {
 html,
 body {
     height: 100%;
-    background: #525252; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #525252, #3d72b4 ) fixed; /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #525252, #3d72b4) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #3d72b4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #525252, #3d72b4 ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #525252, #3d72b4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 body {
@@ -54,10 +54,7 @@ body {
     margin-top: 15px;
 }
 
-.hr #solve {
-    height: 3px;
-    background-color: black;
-}
+
 
 
 /*
