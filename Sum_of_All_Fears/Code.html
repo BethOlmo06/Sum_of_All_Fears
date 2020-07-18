@@ -24,14 +24,34 @@
         <header class="masthead mb-auto">
             <div class="inner">
                 <h6 class="masthead-brand">Arrays JavaScript Exercise</h6>
-                <nav class="nav nav-masthead justify-content-center">
-                    <a class="nav-link" href="\index.html">Home</a>
-                    <a class="nav-link" href="\solve.html">Solve</a>
-                    <a class="nav-link active" href="#">Code</a>
-                    <a class="nav-link" href="https://github.com/BethOlmo06/Sum_of_All_Fears" target="_blank">Git</a>
-                    <a class="nav-link" href="#">Blog</a>
-                    <a class="nav-link" href="https://betholmo-portfolio.netlify.app/" target="_blank">Portfolio</a>
-                </nav>
+                <ul class="nav nav-pills justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="\index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="\solve.html">Solve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/BethOlmo06/Sum_of_All_Fears" target="_blank">Git</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://betholmo-portfolio.netlify.app/" target="_blank">Portfolio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">JS Exercises</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://palindrome-js.netlify.app/index.html" target="_blank">Sum of All Fears</a>
+                            <a class="dropdown-item" href="https://sunset-hills-js.netlify.app/index.html" target="_blank">Sunset Hills</a>
+                            <a class="dropdown-item" href="https://fizzbuzz-js.netlify.app/index.html" target="_blank">Fizz Buzz</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </header>
 
@@ -45,8 +65,8 @@
             <div class="container-fluid" id="code">
                 <div class="row">
                     <div class="col-12">
-                        <pre class="line-numbers language-js" >
-                            <code class="language-js">$("#submit").on("click", function () {
+                        <pre class="line-numbers language-js">
+                        <code class="language-js">$("#submit").on("click", function () {
                                 //Step 1: Get user data
                                 let k = parseInt($("#numInK").val());
                                 let num1 = parseInt($("#numIn1").val());
@@ -87,14 +107,15 @@
                                 $("#resultOut").text("");})
                                 $("#resultOut").text(message);});</code>
                         </pre>
-                     </div>
+                    </div>
                 </div>
-             </div>
+            </div>
         </div>
     </div>
 
     <script src="SCRIPTS/jquery.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="SCRIPTS/bootstrap.bundle.min.js"></script>
     <script src="SCRIPTS/bootstrap.min.js"></script>
     <script src="SCRIPTS/prism.js"></script>
 
