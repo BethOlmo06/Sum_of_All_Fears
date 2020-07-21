@@ -8,7 +8,6 @@
     let num4 = parseInt($("#numIn4").val());
     let num5 = parseInt($("#numIn5").val());
 
-
     //Step 2: Create an array and add user data to it
     let array = new Array();
     array.push(num1);
