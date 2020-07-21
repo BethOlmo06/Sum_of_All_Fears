@@ -1,18 +1,17 @@
-﻿//force valid inputs
-//$(".numOnly").keydown(function (event) {
-    //Allow backspace, tab, and delete
-    //if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9) {
-    //}
-    //else {
-        //Ensure that it is a number and stop the keypress
-//        if (event.keyCode < 48 || event.keyCode > 57) {
-//            Swal.fire('Please enter a whole number from 0 to 9.'), event.preventDefault();
-//        }
-//    }
-//});
+﻿$("#submit").on("click", function () {
+    //force valid inputs
+    //$(".numOnly").keydown(function (event) {
+    //     Allow backspace, tab, and delete
+    //    if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9) {
+    //    }
+    //    else {
+    //         Ensure that it is a number and stop the keypress
+    //        if (event.keyCode < 48 || event.keyCode > 57) {
+    //            Swal.fire('Please enter a whole number from 0 to 9.'), event.preventDefault();
+    //        }
+    //    }
+    //});
 
-$("#submit").on("click", function () {
-    
     //Step 1: Get user data
     let k = parseInt($("#numInK").val());
     let num1 = parseInt($("#numIn1").val());
@@ -21,7 +20,7 @@ $("#submit").on("click", function () {
     let num4 = parseInt($("#numIn4").val());
     let num5 = parseInt($("#numIn5").val());
 
-    
+
     //Step 2: Create an array and add user data to it
     let array = new Array();
     array.push(num1);
