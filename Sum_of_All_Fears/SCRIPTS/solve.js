@@ -1,16 +1,5 @@
 ﻿$("#submit").on("click", function () {
-    //$(".numOnly").keydown(function (event) {
-    //    // Allow only backspace and delete
-    //    if (event.keyCode == 46 || event.keyCode == 8) {
-    //        // let it happen
-    //    }
-    //    else {
-    //        // Ensure that it is a number and stop the keypress
-    //        if (event.keyCode < 48 || event.keyCode > 57) {
-    //            Swal.fire('Please enter a whole number from 0 to 9.'), event.preventDefault();
-    //        }
-    //    }
-    //});
+
     //Step 1: Get user data
     let k = parseInt($("#numInK").val());
     let num1 = parseInt($("#numIn1").val());
