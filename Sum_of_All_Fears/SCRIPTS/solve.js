@@ -45,5 +45,20 @@
         $("#numIn5").val("");
         $("#resultOut").text("");
     })
+    $(".numOnly").keydown(function (event) {
+        let valid = false;
+        // Allow backspace, tab, and delete
+        if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9) {
+            // let it happen
+            valid = true;
+        }
+        else {
+            // Ensure that it is a number and stop the keypress
+            if (event.keyCode >= 96 && event.keyCode <= 105) {
+                valid = true;
+            }
+        }
+    });
+
     $("#resultOut").text(message);
 });
